@@ -3,114 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jishnu - Planning Engineer Portfolio">
-  <title>Jishnu | Planning Engineer</title>
+  <meta name="description" content="Jishnu | Planning Engineer Portfolio">
+  <title>Jishnu | Planning Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a class="logo" href="#home">JISHNU<span>.</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#skills">Skills</a>
-        <a href="#experience">Experience</a><a href="#projects">Work Samples</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </div>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="container nav">
+    <a class="brand" href="#home">JISHNU<span>.</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
+      <a href="#portfolio">Portfolio</a><a class="nav-contact" href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">CIVIL ENGINEERING • PROJECT CONTROLS</p>
-          <h1>Planning progress.<br><span>Building possibilities.</span></h1>
-          <p class="hero-copy">Hello, I'm Jishnu — a Civil Engineer focused on project planning, progress monitoring, scheduling and reporting in the construction industry.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">Explore My Work</a>
-            <a class="button secondary" href="#contact">Get in Touch</a>
-          </div>
-          <p class="location">Based in the UAE · Open to Planning Engineer opportunities</p>
-        </div>
-        <div class="hero-card">
-          <div class="card-mark">P6</div>
-          <p class="card-label">PLANNING ENGINEER PORTFOLIO</p>
-          <h2>Plan · Monitor · Report</h2>
-          <div class="mini-stats">
-            <div><strong>01</strong><span>Project Planning</span></div>
-            <div><strong>02</strong><span>Progress Tracking</span></div>
-            <div><strong>03</strong><span>Project Reporting</span></div>
-          </div>
-        </div>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-layout">
+    <div class="hero-content">
+      <p class="kicker">CIVIL ENGINEERING · PROJECT CONTROLS</p>
+      <h1>Planning with purpose.<br><span>Delivering with clarity.</span></h1>
+      <p class="hero-intro">I'm Jishnu, a Civil Engineering graduate focused on construction planning, project scheduling, progress monitoring and reporting.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="#portfolio">View My Work</a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
       </div>
-    </section>
+      <p class="hero-note">UAE Construction Industry · Planning Engineer Portfolio</p>
+    </div>
+    <aside class="profile-panel">
+      <div class="photo-frame">
+        <img src="assets/profile.jpg" alt="Jishnu's professional profile photo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+        <div class="photo-fallback">JN</div>
+      </div>
+      <p class="profile-name">Jishnu</p>
+      <p class="profile-role">Civil Engineer | Planning & Project Controls</p>
+      <div class="profile-tags"><span>Primavera P6</span><span>Excel</span><span>AutoCAD</span></div>
+      <p class="photo-hint">Add your photo as <b>assets/profile.jpg</b></p>
+    </aside>
+  </div>
+</section>
 
-    <section class="section container" id="about">
-      <p class="eyebrow">PROFILE</p><h2 class="section-title">About Me</h2>
-      <p class="section-intro">I am a Civil Engineering graduate from NIT Calicut with practical exposure to construction site activities and project coordination. My professional interests include planning and scheduling, project controls, progress measurement and construction reporting.</p>
-      <div class="info-strip">
-        <div><span>Education</span><strong>B.Tech, Civil Engineering</strong></div>
-        <div><span>University</span><strong>NIT Calicut</strong></div>
-        <div><span>Career Focus</span><strong>Planning & Project Controls</strong></div>
-      </div>
-    </section>
+<section class="section container" id="about">
+  <p class="kicker blue">PROFILE</p><h2>About Me</h2>
+  <p class="lead">I am a Civil Engineering graduate from NIT Calicut (2024), with construction-site exposure and an interest in planning and project controls. I focus on organising project information into clear schedules, progress updates and reports that support informed project decisions.</p>
+  <div class="facts">
+    <div><small>EDUCATION</small><b>B.Tech Civil Engineering</b></div>
+    <div><small>INSTITUTE</small><b>NIT Calicut</b></div>
+    <div><small>CAREER FOCUS</small><b>Planning Engineer</b></div>
+  </div>
+</section>
 
-    <section class="section soft-bg" id="skills">
-      <div class="container">
-        <p class="eyebrow">CAPABILITIES</p><h2 class="section-title">Core Skills & Tools</h2>
-        <div class="skill-grid">
-          <article class="skill-card"><div class="skill-icon">P6</div><h3>Primavera P6</h3><p>Baseline schedules, activity updates, relationships, critical path and lookahead planning.</p></article>
-          <article class="skill-card"><div class="skill-icon">XLS</div><h3>Microsoft Excel</h3><p>Progress trackers, quantity monitoring, dashboards, S-curves and reporting templates.</p></article>
-          <article class="skill-card"><div class="skill-icon">CAD</div><h3>AutoCAD</h3><p>Drawing review, measurement support and coordination with construction teams.</p></article>
-          <article class="skill-card"><div class="skill-icon">PC</div><h3>Project Controls</h3><p>Progress monitoring, variance review, resource planning and schedule reporting.</p></article>
-        </div>
-      </div>
-    </section>
+<section class="section section-tint" id="skills">
+  <div class="container">
+    <p class="kicker blue">CAPABILITIES</p><h2>Skills & Tools</h2>
+    <div class="skill-grid">
+      <article class="skill"><div class="skill-symbol">P6</div><h3>Primavera P6</h3><p>WBS, activity sequencing, relationships, baseline schedules, updates and critical path review.</p></article>
+      <article class="skill"><div class="skill-symbol">XLS</div><h3>Microsoft Excel</h3><p>Progress trackers, quantity updates, data organisation, reporting and dashboard support.</p></article>
+      <article class="skill"><div class="skill-symbol">S</div><h3>Progress & S-Curves</h3><p>Planned versus actual progress, cumulative progress curves and performance reporting.</p></article>
+      <article class="skill"><div class="skill-symbol">CAD</div><h3>AutoCAD</h3><p>Drawing review and technical coordination support for construction activities.</p></article>
+    </div>
+  </div>
+</section>
 
-    <section class="section container" id="experience">
-      <p class="eyebrow">PROFESSIONAL BACKGROUND</p><h2 class="section-title">Experience & Exposure</h2>
-      <div class="timeline">
-        <div class="timeline-item"><span class="timeline-dot"></span><div><p class="timeline-date">UAE CONSTRUCTION PROJECTS</p><h3>Site & Planning Coordination</h3><p>Exposure to construction execution, MEP coordination, progress updates, engineering and material submittal logs, and project reporting.</p><small>Replace this section with your employer, project name, dates and exact responsibilities.</small></div></div>
-        <div class="timeline-item"><span class="timeline-dot"></span><div><p class="timeline-date">TRAINING</p><h3>Primavera P6 & AutoCAD</h3><p>Training exposure to project planning and management concepts using Primavera P6, PPM concepts and AutoCAD.</p><small>Add your training provider and completion dates if you wish.</small></div></div>
-      </div>
-    </section>
+<section class="section container" id="experience">
+  <p class="kicker blue">BACKGROUND</p><h2>Experience & Exposure</h2>
+  <div class="experience-card">
+    <div class="experience-marker">01</div>
+    <div><p class="eyebrow">UAE · CONSTRUCTION</p><h3>Site Execution & Planning Coordination</h3>
+      <p>Exposure to site execution, MEP coordination, progress updates, engineering and material submittal logs, and construction reporting.</p>
+      <p class="edit-note">Customise this entry with your employer, project title, employment dates and exact responsibilities before publishing.</p>
+    </div>
+  </div>
+  <div class="experience-card">
+    <div class="experience-marker">02</div>
+    <div><p class="eyebrow">TRAINING</p><h3>Primavera P6 & AutoCAD</h3>
+      <p>Training exposure to Primavera P6, project planning and management concepts, and AutoCAD.</p>
+      <p class="edit-note">Add training provider and completion details if applicable.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="section soft-bg" id="projects">
-      <div class="container">
-        <p class="eyebrow">SELECTED WORK</p><h2 class="section-title">Work Samples</h2>
-        <p class="section-intro">Use this section to showcase your own approved and anonymised work samples. Do not upload confidential project or client information.</p>
-        <div class="sample-grid">
-          <article class="sample-card"><div class="sample-visual visual-one"><span>01 / SCHEDULE</span><b>PROJECT<br>SCHEDULE</b></div><div class="sample-body"><h3>Primavera P6 Programme</h3><p>Baseline and updated programme extracts, WBS and activity sequencing.</p></div></article>
-          <article class="sample-card"><div class="sample-visual visual-two"><span>02 / REPORTING</span><b>PROGRESS<br>REPORT</b></div><div class="sample-body"><h3>Progress Reporting</h3><p>Weekly progress summaries, planned versus actual review and lookahead reports.</p></div></article>
-          <article class="sample-card"><div class="sample-visual visual-three"><span>03 / TRACKERS</span><b>ENGINEERING<br>LOG</b></div><div class="sample-body"><h3>Engineering & Material Logs</h3><p>Submittal tracking, status monitoring and key-date reporting.</p></div></article>
-        </div>
-      </div>
-    </section>
+<section class="section section-tint" id="portfolio">
+  <div class="container">
+    <p class="kicker blue">SELECTED WORK</p><h2>Portfolio & Work Samples</h2>
+    <p class="section-lead">A selection of planning and project-control work. Replace the sample panels with your own approved, anonymised screenshots and site photographs.</p>
+    <div class="work-grid">
+      <article class="work-card">
+        <div class="work-art p6-art"><span>01 · SCHEDULING</span><strong>PRIMAVERA<br>P6 PROGRAMME</strong><i>WBS / LOGIC / CPM</i></div>
+        <div class="work-copy"><h3>Primavera P6</h3><p>Baseline programme, WBS structure, activity relationships, schedule updates and critical-path review.</p><span class="tag">Scheduling</span></div>
+      </article>
+      <article class="work-card">
+        <div class="work-art excel-art"><span>02 · TRACKING</span><strong>EXCEL<br>REPORTING</strong><i>TRACKERS / DASHBOARDS</i></div>
+        <div class="work-copy"><h3>Excel Reports</h3><p>Progress trackers, engineering and material logs, quantity updates and weekly reporting.</p><span class="tag">Project Reporting</span></div>
+      </article>
+      <article class="work-card">
+        <div class="work-art curve-art"><span>03 · PERFORMANCE</span><strong>PLANNED VS<br>ACTUAL</strong><i>S-CURVE ANALYSIS</i></div>
+        <div class="work-copy"><h3>S-Curves</h3><p>Planned and actual progress trends, cumulative progress and schedule performance summaries.</p><span class="tag">Progress Monitoring</span></div>
+      </article>
+      <article class="work-card">
+        <div class="work-art site-art"><span>04 · SITE EXPOSURE</span><strong>CONSTRUCTION<br>ACTIVITIES</strong><i>FIELD COORDINATION</i></div>
+        <div class="work-copy"><h3>Project Photos</h3><p>Site activities and construction progress photographs, with short descriptions and dates.</p><span class="tag">Site Experience</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="section container">
-      <p class="eyebrow">WORK APPROACH</p><h2 class="section-title">My Planning Workflow</h2>
-      <div class="workflow">
-        <div><b>01</b><h3>Understand</h3><p>Review scope, contract milestones and project requirements.</p></div>
-        <div><b>02</b><h3>Plan</h3><p>Develop activity logic, durations, resources and baseline schedules.</p></div>
-        <div><b>03</b><h3>Monitor</h3><p>Collect site progress and assess schedule performance.</p></div>
-        <div><b>04</b><h3>Report</h3><p>Communicate progress, variances, risks and recovery actions.</p></div>
-      </div>
-    </section>
+<section class="section container">
+  <p class="kicker blue">WORK APPROACH</p><h2>Planning Workflow</h2>
+  <div class="workflow">
+    <div><b>01</b><h3>Understand</h3><p>Review scope, milestones and project requirements.</p></div>
+    <div><b>02</b><h3>Plan</h3><p>Organise activities, logic, durations and resources.</p></div>
+    <div><b>03</b><h3>Monitor</h3><p>Review site progress and identify variances.</p></div>
+    <div><b>04</b><h3>Report</h3><p>Present progress, risks and required actions.</p></div>
+  </div>
+</section>
 
-    <section class="contact-section" id="contact">
-      <div class="container contact-inner">
-        <p class="eyebrow">LET'S CONNECT</p><h2>Have a project or opportunity in mind?</h2>
-        <p>I'm interested in connecting with construction and project controls professionals.</p>
-        <div class="contact-links">
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn Profile</a>
-        </div>
-        <small>Update the email address and LinkedIn URL in index.html before publishing.</small>
-      </div>
-    </section>
-  </main>
-  <footer><div class="container footer-inner"><span>© <span id="year"></span> Jishnu. All rights reserved.</span><a href="#home">Back to top ↑</a></div></footer>
-  <script src="script.js"></script>
+<section class="contact-section" id="contact">
+  <div class="container">
+    <p class="kicker">LET'S CONNECT</p><h2>Let's discuss planning and project opportunities.</h2>
+    <p>Feel free to connect with me regarding Planning Engineer opportunities and construction project controls.</p>
+    <div class="contact-actions">
+      <a class="btn btn-light" href="mailto:YOUR-EMAIL@example.com">Email Me</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="contact-note">Before publishing, replace the sample email and LinkedIn link with your own details.</p>
+  </div>
+</section>
+</main>
+<footer><div class="container footer"><span>© <span id="year"></span> Jishnu · Planning Engineer Portfolio</span><a href="#home">Back to top ↑</a></div></footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,30 +1,36 @@
-JISHNU - PLANNING ENGINEER PORTFOLIO WEBSITE
+JISHNU - CUSTOMISED PLANNING ENGINEER PORTFOLIO
 
-FILES
-- index.html : website content
-- style.css  : design and responsive layout
-- script.js  : mobile menu and footer year
+CONTENTS
+- index.html
+- style.css
+- script.js
+- assets/ (put your profile photo and project images here)
 
-HOW TO VIEW
-1. Extract this ZIP file.
-2. Open the extracted folder.
-3. Double-click index.html. It will open in your browser.
+PREVIEW
+Open index.html in a web browser.
 
-HOW TO PUBLISH FREE WITH GITHUB PAGES
-1. Create/sign in to a GitHub account.
-2. Create a PUBLIC repository named: jishnu-planning-portfolio
-3. Upload index.html, style.css and script.js to the repository root.
-4. Open repository Settings > Pages.
-5. Under Build and deployment, choose "Deploy from a branch".
-6. Select branch "main" and folder "/ (root)", then Save.
-7. Wait for GitHub Pages to publish your website. The URL will look like:
-   https://YOUR-USERNAME.github.io/jishnu-planning-portfolio/
+ADD YOUR PROFILE PHOTO
+1. Choose a professional head-and-shoulders photo.
+2. Copy it into the assets folder.
+3. Rename the photo exactly: profile.jpg
+4. The website already looks for assets/profile.jpg.
+   If no photo is present, it shows a JN placeholder instead.
 
-IMPORTANT - PERSONALISE BEFORE PUBLISHING
-- Replace the email address and LinkedIn URL in index.html.
-- Add your actual employer, project names, dates and responsibilities.
-- Add your own approved, anonymised screenshots and work samples.
-- Remove any placeholder text that does not apply to you.
-- Do not publish confidential client or project information.
+ADD YOUR WORK SAMPLE IMAGES
+You can add your own approved, anonymised screenshots/photos later.
+Do not publish confidential client, employer or project information.
+To add images to a work card, edit index.html and add an image in the relevant work-card.
 
-This is a static HTML/CSS/JavaScript website. No paid hosting or coding software is required.
+UPDATE CONTACT DETAILS
+In index.html, search for YOUR-EMAIL@example.com and replace it with your email.
+Replace the LinkedIn link https://www.linkedin.com/ with your actual profile URL.
+
+PUBLISH / UPDATE WITH GITHUB PAGES
+1. Open your GitHub repository.
+2. Upload/replace index.html, style.css and script.js.
+3. Upload the assets folder too, including assets/profile.jpg.
+4. Commit changes.
+5. GitHub Pages will redeploy the website automatically. Your website URL stays the same.
+
+CUSTOMISE YOUR DETAILS
+Replace the sample experience descriptions with your exact employer, project, dates and responsibilities before publishing.
