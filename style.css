@@ -46,3 +46,14 @@ ul{list-style:none;padding:0;display:grid;gap:9px}li{padding-left:18px;position:
 #book.ready{transition:transform 1s cubic-bezier(.65,0,.35,1)}#book.ready .leaf{transition:transform 1.1s cubic-bezier(.65,0,.35,1)}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}.duo img{width:100%;aspect-ratio:3/3.4;object-fit:cover;border-radius:12px;box-shadow:0 8px 20px rgba(11,31,58,.25);margin-bottom:8px}
 .duo b{display:block;color:var(--navy);font:600 .95rem Poppins}.duo span{font-size:.82rem;color:var(--mut);line-height:1.4;display:block}
+
+.glare{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .35s;z-index:5;overflow:hidden;
+ background:radial-gradient(circle 190px at var(--mx,50%) var(--my,50%),rgba(255,255,255,.42),rgba(190,220,255,.22) 38%,rgba(120,170,235,.10) 62%,transparent 78%);
+ box-shadow:inset 0 0 0 1px rgba(255,255,255,.55),inset 0 0 40px rgba(150,200,255,.25)}
+.glare::before{content:"";position:absolute;top:-20%;bottom:-20%;width:38%;left:-60%;transform:skewX(-18deg);
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent)}
+.face.hot .glare{opacity:1}.face.hot .glare::before{animation:sweep 1.1s ease-out 1}
+@keyframes sweep{to{left:130%}}
+.ctrl button:hover:not(:disabled){background:rgba(242,140,40,.75);box-shadow:0 0 0 1px rgba(255,255,255,.6),0 6px 24px rgba(242,140,40,.6);backdrop-filter:blur(6px);transform:scale(1.1)}
+.ctrl button{transition:.25s}
+@media(prefers-reduced-motion:reduce){.face.hot .glare::before{animation:none}}

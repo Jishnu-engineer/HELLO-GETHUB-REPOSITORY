@@ -20,7 +20,7 @@ let leaves=[],cur=0,mobile=null;
 function build(){mobile=innerWidth<=820;book.innerHTML='';
  const items=mobile?pages.map(p=>[p,'']):Array.from({length:pages.length/2},(_,k)=>[pages[2*k],pages[2*k+1]]);
  leaves=items.map(([f,b],k)=>{const l=document.createElement('div');l.className='leaf';
-  l.innerHTML=`<div class="face front">${f}</div><div class="face back">${b}</div>`;
+  l.innerHTML=`<div class="face front">${f}<i class="glare"></i></div><div class="face back">${b}<i class="glare"></i></div>`;
   l.addEventListener('click',e=>{if(e.target.closest('a'))return;l.classList.contains('flipped')?go(-1):go(1)});book.appendChild(l);return l});
  cur=Math.min(cur,leaves.length);settle()}
 function settle(){leaves.forEach((l,k)=>{l.classList.toggle('flipped',k<cur);l.style.zIndex=k<cur?k+1:leaves.length-k});
@@ -37,3 +37,7 @@ addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0]
 addEventListener('resize',()=>{if((innerWidth<=820)!==mobile){cur=0;build()}});
 build();
 requestAnimationFrame(()=>requestAnimationFrame(()=>book.classList.add('ready')));
+
+book.addEventListener('pointermove',e=>{const f=e.target.closest('.face');book.querySelectorAll('.face.hot').forEach(x=>{if(x!==f)x.classList.remove('hot')});if(!f)return;
+ const r=f.getBoundingClientRect(),g=f.querySelector('.glare');g.style.setProperty('--mx',(e.clientX-r.left)+'px');g.style.setProperty('--my',(e.clientY-r.top)+'px');f.classList.add('hot')});
+book.addEventListener('pointerleave',()=>book.querySelectorAll('.face.hot').forEach(x=>x.classList.remove('hot')));
